@@ -6,8 +6,9 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy:{
-      '/api':{
-        target: 'http://localhost:8080',
+      '/api':{                       //target: 'http://localhost:8080',  previous local host
+        target : 'https://my-homelyhub.onrender.com',    //now live 
+
         changeOrigin: true,
         secure: false,
       }
